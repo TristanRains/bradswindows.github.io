@@ -4,50 +4,65 @@ body {
 }
 
 :root {
-    --primary-color: #282b2c;
+    --primary-color: #0f0f0f;
     --secondary-color: #6c757d;
-    --background-color: #f8f9fa;
-    --text-color: #212529;
+    --background-color: #0b0b0b;
+    --text-color: #e3e6ed;
 }
 
-nav {
-    background-color: var(--primary-color);
-    color: #fff;
-    position: fixed;
-    text-align: right;
+* {
+    box-sizing: border-box;
+}
+
+.close {
+    display: relative;
+    position: absolute;
     top: 0;
-    padding: 7px 10px;
-    width: 100%;
-}
-
-a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 20px;
-}
-
-.logo {
-    display: block;
-    width: 60dvw;
-    height: auto;
-    margin: auto auto;
+    left: 10px;
+    bottom: 0;
+    right: 0;
+    margin: auto 0;
+    height: 4dvw;
+    width: auto;
+    z-index: 10;
 }
 
 .container {
-    position: relative;
-    margin-top: 12dvw;
+    background-color: var(--background-color);
+    position: fixed;
+    padding: 8px;
     width: 100%;
-    height:fit-content;
+    z-index: -1;
+    max-height: 7dvw;
+    display: flex;
+    justify-content: flex-end;
 }
 
+nav span {
+    padding: 0px 50px;
+}
 
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.logo {
+    position: relative;
+    display: block;
+    width: 60dvw;
+    top: 12dvw;
+    margin: 0 auto;
+    height: auto;
+}
+
+/*
 @media (max-width: 768px) {
     .logo {
-        max-height: 30dvh;
-        max-width: 55dvw;
+        width: 80dvw;
     }
     a{
-        font-size: 1.25rem;
+        font-size: 1.15rem;
         margin-right: 25px;
     }
     nav {
@@ -58,28 +73,27 @@ a {
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 600px) {
     .logo {
-        max-height: 30dvh;
-        max-width: 50dvw;
+        width: 80dvw;
     }
     a{
-        font-size: 1.1rem;
-        margin-right: 16px;
+        font-size: 1rem;
+        margin-right: 19px;
     }
     nav {
         padding: 5px 10px;
     }
     .container {
-        margin-top: 13dvh;
+        margin-top: 11dvh;
     }
-}
+}*/
 
 .contact-link {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     padding: 10px 20px;
-    border-radius: 5px;
-    background-color: #007BFF;
+    border-radius: 50px;
+    background-color: #0ede4c;
 }
