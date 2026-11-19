@@ -13,7 +13,6 @@ const links = document.querySelectorAll('.link');
 const menu = document.querySelector(".menu");
 links.forEach((link) => {
 link.addEventListener('click', (event) => {
-    event.preventDefault(); // Optional
     // event.currentTarget is guaranteed to be the <a> tag here
     document.querySelectorAll(".link").forEach((item) => {
     item.classList.remove("highlight");
