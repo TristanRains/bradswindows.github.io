@@ -31,19 +31,31 @@
     <link rel="shortcut icon" type="image/x-icon" href="shortcutIcon.jpg" />
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body onload="update()">
     <header>
         <nav>
             <div class="container">
-                <img class="close" src="Close icon.png">
-                <h2><span><a href="#home">Home</a></span>
-                <span><a href="#about">About</a></span>
-                <span><a href="#pricing">Pricing</a></span>
-                <span><a href="#services">Services</a></span>
-                <span><a class="contact-link" href="#contact">Contact us</a></span></h2>
+                <button onclick="closeMenu()" id="close"><img class="close" src="Close icon.png"></button>
+                <h2><span><a href="#home" id="Home" class="link">Home</a></span>
+                <span><a href="#about" id="About" class="link">About</a></span>
+                <span><a href="#pricing" id="Pricing" class="link">Pricing</a></span>
+                <span><a href="#services" id="Services" class="link">Services</a></span>
+                <span><a id="contact-link" href="#contact">Contact us</a></span></h2>
             </div>
         </nav>
-        <img src="BradsWindowCleaningImage.png" alt="Window Cleaning Logo" class="logo">
+        <div class="menu" id="open">
+            <button onclick="openMenu()" id="open"><img src="icons8-menu-50.png" id="menu"></button>
+        </div>
     </header>
+    <main>
+        <img src="BradsWindowCleaningImage.png" alt="Window Cleaning Logo" class="logo"></button>
+        <div class="content">
+            <p id="pricing">We charge good prices</p>
+            <p id="home">Welcome to the home page</p>
+            <p id="about">We love cleaning windows</p>
+            <p id="services">We offer many services</p>
+        </div>
+    </main>
+    <script src="script.js" defer></script>
 </body>
 </html>
