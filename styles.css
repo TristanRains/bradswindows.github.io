@@ -17,8 +17,8 @@ body {
 #open {
     display: relative;
     position: absolute;
-    top: 0;
-    left: 10px;
+    top: 10px;
+    left: 20px;
     bottom: 0;
     right: 0;
     height: 4dvw;
@@ -33,7 +33,7 @@ body {
     display: relative;
     position: absolute;
     top: 0;
-    left: 10px;
+    left: 20px;
     bottom: 0;
     right: 0;
     margin: auto 0;
@@ -46,10 +46,9 @@ body {
 }
 
 .close {
-    display: relative;
     position: absolute;
     top: 0;
-    left: 10px;
+    left: 0;
     bottom: 0;
     right: 0;
     margin: auto 0;
@@ -59,10 +58,14 @@ body {
 }
 
 #menu {
-    position: absolute;
-    left: 14px;
-    top: 25px;
+    position: relative;
+    top: 10px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto 0;
     height: 3dvw;
+    width: auto;
 }
 
 .container {
@@ -74,12 +77,12 @@ body {
     max-height: 7dvw;
     display: flex;
     justify-content: flex-end;
-    transition: transform 0.8s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 
 nav span {
-    display: relative;
-    padding: 0px 30px;
+    position: relative;
+    padding: 0px 40px;
     top: 0;
     bottom: 0;
     right: 0;
@@ -92,6 +95,12 @@ nav span {
 }
 
 .menu {
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 3dvw;
+    width: 100%;
+    position: fixed;
     transition: transform 0.8s ease-in-out;
 }
 
@@ -100,7 +109,7 @@ nav span {
 }
 
 .highlight {
-    transition: all 0.3s ease-in;
+    transition: all 0.1s ease-in;
     background-color: rgba(30,144,255,0.7);
     border: 2px solid rgb(30,144,255);
     border-radius: 50px;

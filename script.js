@@ -1,6 +1,6 @@
 function update(){
-    document.getElementById("open").style.visibility = "hidden";
-    document.getElementById("open").classList.toggle("display");
+    document.getElementById("display").style.visibility = "hidden";
+    document.getElementById("display").classList.toggle("display");
     const Home = document.getElementById("Home");
     const About = document.getElementById("About");
     const Services = document.getElementById("Services");
@@ -29,7 +29,7 @@ function closeMenu() {
 };
 
 function openMenu() {
+    menu.classList.toggle("display");
     container.classList.toggle("nav-hidden");
     document.body.style.marginTop = "0";
-    menu.classList.toggle("display");
 };
